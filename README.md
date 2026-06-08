@@ -3,6 +3,9 @@
 Reliability-conditioned Prior-Aligned Correction for sparse and disrupted
 spatiotemporal reconstruction.
 
+**Keywords:** spatiotemporal reconstruction; sparse sensor imputation;
+post-backbone correction; reliability-conditioned prior alignment.
+
 ![RePAC method overview](assets/method_overview.png)
 
 ## Overview
@@ -103,10 +106,13 @@ The `results/` directory contains compact CSV summaries used by the manuscript.
 The main canonical traffic evaluation uses five datasets, three disruption
 protocols, three random seeds, and four reconstruction backbones.
 
-| Comparison | Backbone MAE | RePAC MAE | Summary |
-| --- | ---: | ---: | --- |
-| Canonical traffic reconstruction | 0.532134 | 0.498632 | RePAC improves the same backbones under random missing, incident perturbation, and sensor failure. |
-| Plug-in baseline comparison | 0.533133 | 0.498632 | RePAC improves over GenericAdapter, DoRAAdapter, CalibrationGuard, and FailureAnomalyGuard. |
+### Table 10: Full Main Results
+
+![Table 10: full main masked MAE results](assets/table10_full_main_results.png)
+
+### Table 11: Full Plug-in Baseline Comparison
+
+![Table 11: full plug-in baseline comparison](assets/table11_plugin_baselines.png)
 
 Generate a compact terminal summary:
 
@@ -116,12 +122,23 @@ python scripts/summarize_results.py
 
 ## Figures
 
-Representative figures are included in `assets/`:
+Representative figures are included in `assets/` and displayed below.
 
-- `method_overview.png`: RePAC method diagram.
-- `case_inputs.png`: observed input, missing region, and disruption evidence.
-- `case_predictions.png`: backbone prediction, RePAC prediction, and error reduction.
-- `case_mechanism.png`: learned correction, prior direction, promotion weight, and promoted correction.
+### Method Overview
+
+![RePAC method overview](assets/method_overview.png)
+
+### Representative Case Inputs
+
+![Representative case inputs](assets/case_inputs.png)
+
+### Representative Case Predictions
+
+![Representative case predictions](assets/case_predictions.png)
+
+### Representative Case Mechanism
+
+![Representative case mechanism](assets/case_mechanism.png)
 
 ## Data and Reproducibility Notes
 
