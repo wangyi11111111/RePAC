@@ -1,4 +1,4 @@
-# RePAC
+﻿# RePAC
 
 Reliability-conditioned Prior-Aligned Correction for sparse and disrupted
 spatiotemporal reconstruction.
@@ -106,13 +106,13 @@ The `results/` directory contains compact CSV summaries used by the manuscript.
 The main canonical traffic evaluation uses five datasets, three disruption
 protocols, three random seeds, and four reconstruction backbones.
 
-### Table 10: Full Main Results
+### Table 11: Full Main Results
 
-![Table 10: full main masked MAE results](assets/table10_full_main_results.png)
+![Table 11: full main masked MAE results](assets/table11_full_main_results.png)
 
-### Table 11: Full Plug-in Baseline Comparison
+### Table 12: Full Plug-in Baseline Comparison
 
-![Table 11: full plug-in baseline comparison](assets/table11_plugin_baselines.png)
+![Table 12: full plug-in baseline comparison](assets/table12_plugin_baselines.png)
 
 Generate a compact terminal summary:
 
@@ -167,3 +167,4 @@ observed subset.
 ## License
 
 This repository is released under the MIT License.
+
